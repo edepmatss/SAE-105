@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Recommandation</title>
+		<link rel="stylesheet" href="../css/reco.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="../img/logo-removed.png" alt="" class="logo" />
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="../html/index.html">Accueil</a></li>
+					<li><a href="../html/norvege.html">Norvège</a></li>
+					<li><a href="../html/tanzanie.html">Tanzanie</a></li>
+					<li><a href="../html/vietnam.html">Vietnam</a></li>
+					<li>
+						<a href="../html/recommandation.html">Recommandation</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="contactez-nous">
+				<h1>Contactez-nous</h1>
+				<p>
+					Un problème, une question, envie de nous envoyer un message
+					d’amour ? N’hésitez pas à utiliser ce formulaire pour
+					prendre contact avec nous !
+				</p>
+				<form action="/page-traitement-donnees" method="post">
+					<div>
+						<label for="nom">Votre nom</label>
+						<input
+							type="text"
+							id="nom"
+							name="nom"
+							placeholder="Martin"
+							required
+						/>
+					</div>
+					<div>
+						<label for="email">Votre e-mail</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="monadresse@mail.com"
+							required
+						/>
+					</div>
+					<div>
+						<label for="sujet"
+							>Quel est le sujet de votre message ?</label
+						>
+						<select name="sujet" id="sujet" required>
+							<option value="" disabled selected hidden>
+								Choisissez le sujet de votre message
+							</option>
+							<option value="probleme-compte">
+								Problème avec mon compte
+							</option>
+							<option value="question-produit">
+								Question à propos d’un produit
+							</option>
+							<option value="suivi-commande">
+								Suivi de ma commande
+							</option>
+							<option value="autre">Autre...</option>
+						</select>
+					</div>
+					<div>
+						<label for="message">Votre message</label>
+						<textarea
+							id="message"
+							name="message"
+							placeholder="Bonjour, je vous contacte car...."
+							required
+						></textarea>
+					</div>
+					<div>
+						<button type="submit">Envoyer mon message</button>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer-info">
+				<a href="../html/about.html"
+					>A propos de nous | Contact | Aide</a
+				>
+			</div>
+			<div class="footer-logo">
+				<img src="../img/logo-removed.png" alt="" />
+			</div>
+		</footer>
+	</body>
+</html>
