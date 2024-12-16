@@ -24,31 +24,60 @@
 			</nav>
 		</header>
 		<main>
-			<div class="contactez-nous">
-				<h1>Contactez-nous</h1>
+			<h1>Notre recommandation</h1>
+			<p>
+				Après analyse des trois destinations précédentes, nous vous
+				recommandons de visiter le volcan
+				<a href="../html/odl.html">Ol Doinyo Lengaï</a> en Tanzanie.
+			</p>
+			<p>
+				C'est un lieu unique avec des paysages spectaculaires et une
+				expérience naturelle hors du commun. Les activités
+				exceptionnelles, comme l’ascension du volcan et l’exploration de
+				la vallée du Rift sont des activités à faire au moins une fois
+				dans sa vie. <br />
+				Ce lieu est certes moins touristique que d'autres destinations,
+				mais il représente une destination incontournable pour ceux qui
+				recherchent une aventure hors des sentiers battus et des moments
+				mémorables au cœur de la nature, permettant ainsi une immersion
+				totale dans la nature.
+			</p>
+
+			<!-- formulaire -->
+			<div class="contact">
+				<h3>Contactez-nous</h3>
 				<p>
-					Un problème, une question, envie de nous envoyer un message
-					d’amour ? N’hésitez pas à utiliser ce formulaire pour
-					prendre contact avec nous !
+					Pour plus d'infrmations sur nos destinations, laissez nous
+					un message !
 				</p>
-				<form action="/page-traitement-donnees" method="post">
+				<form action="/page" method="post">
 					<div>
-						<label for="nom">Votre nom</label>
+						<label for="name">Nom</label>
 						<input
 							type="text"
-							id="nom"
-							name="nom"
-							placeholder="Martin"
+							id="name"
+							name="name"
+							placeholder="votre nom"
 							required
 						/>
 					</div>
 					<div>
-						<label for="email">Votre e-mail</label>
+						<label for="prenom">Prénom</label>
+						<input
+							type="text"
+							id="surname"
+							name="surname"
+							placeholder="votre prenom"
+							required
+						/>
+					</div>
+					<div>
+						<label for="email">E-mail</label>
 						<input
 							type="email"
 							id="email"
 							name="email"
-							placeholder="monadresse@mail.com"
+							placeholder="votreadresse@mail.com"
 							required
 						/>
 					</div>
@@ -60,20 +89,20 @@
 							<option value="" disabled selected hidden>
 								Choisissez le sujet de votre message
 							</option>
-							<option value="probleme-compte">
-								Problème avec mon compte
+							<option value="probleme-web">
+								Problème avec le site web
 							</option>
-							<option value="question-produit">
-								Question à propos d’un produit
+							<option value="question-site">
+								Question à propos d’un site touristique
 							</option>
-							<option value="suivi-commande">
-								Suivi de ma commande
+							<option value="demande-voyage">
+								Demande de voyage
 							</option>
 							<option value="autre">Autre...</option>
 						</select>
 					</div>
 					<div>
-						<label for="message">Votre message</label>
+						<label for="message">Message</label>
 						<textarea
 							id="message"
 							name="message"
@@ -82,7 +111,7 @@
 						></textarea>
 					</div>
 					<div>
-						<button type="submit">Envoyer mon message</button>
+						<button type="submit">Envoyer</button>
 					</div>
 				</form>
 			</div>
